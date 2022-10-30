@@ -1,0 +1,121 @@
+@use "variables";
+
+@mixin addBorderRadiusEachAngle(
+  $topLeft,
+  $topRight,
+  $bottomRight,
+  $bottomLeft
+) {
+  border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.clients-list {
+  display: block;
+}
+
+.client {
+  height: 120px;
+}
+
+.client:nth-child(n+7) {
+  display: none;
+}
+
+.client-page {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@each $client, $color in variables.$client-background {
+  .client-#{$client} {
+    background-color: $color;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "tablet")) {
+  .client-wrapper {
+    width: 768px;
+  }
+
+  .client {
+    width: 256px;
+  }
+
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .client:nth-child(n+7) {
+    display: block;
+  }
+
+  .client-wrapper {
+    width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "netbook")) {
+  .client-wrapper {
+    width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "laptop")) {
+  .client {
+    width: 360px;
+  }
+
+  .client-wrapper {
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "desktop")) {
+  .client {
+    width: 430px;
+  }
+
+  .client-wrapper {
+    width: 1720px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .client:first-child {
+    @include addBorderRadiusEachAngle(12px, 0, 0, 0);
+  }
+
+  .client:last-child {
+    @include addBorderRadiusEachAngle(0, 0, 12px, 0);
+  }
+
+  .client:nth-child(4) {
+    @include addBorderRadiusEachAngle(0, 12px, 0, 0);
+  }
+
+  .client:nth-child(9) {
+    @include addBorderRadiusEachAngle(0, 0, 0, 12px);
+  }
+}
