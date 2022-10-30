@@ -585,6 +585,8 @@ body {
 @media (min-width: 768px) {
   .client-wrapper {
     width: 768px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .client {
     width: 256px;
@@ -596,37 +598,26 @@ body {
   .client:nth-child(n+7) {
     display: block;
   }
-  .client-wrapper {
-    width: 768px;
-    margin-right: auto;
-    margin-left: auto;
-  }
 }
 @media (min-width: 1024px) {
   .client-wrapper {
     width: 1024px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 @media (min-width: 1440px) {
+  .client-wrapper {
+    width: 1440px;
+  }
   .client {
     width: 360px;
   }
-  .client-wrapper {
-    width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-  }
 }
 @media (min-width: 1920px) {
-  .client {
-    width: 430px;
-  }
   .client-wrapper {
     width: 1720px;
-    margin-right: auto;
-    margin-left: auto;
+  }
+  .client {
+    width: 430px;
   }
   .client:first-child {
     border-radius: 12px 0 0 0;

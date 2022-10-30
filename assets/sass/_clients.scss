@@ -50,6 +50,8 @@
 @media (min-width: map-get(variables.$screen-size, "tablet")) {
   .client-wrapper {
     width: 768px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .client {
@@ -64,43 +66,31 @@
   .client:nth-child(n+7) {
     display: block;
   }
-
-  .client-wrapper {
-    width: 768px;
-    margin-right: auto;
-    margin-left: auto;
-  }
 }
 
 @media (min-width: map-get(variables.$screen-size, "netbook")) {
   .client-wrapper {
     width: 1024px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 @media (min-width: map-get(variables.$screen-size, "laptop")) {
-  .client {
-    width: 360px;
-  }
-
   .client-wrapper {
     width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
+  }
+
+  .client {
+    width: 360px;
   }
 }
 
 @media (min-width: map-get(variables.$screen-size, "desktop")) {
-  .client {
-    width: 430px;
-  }
-
   .client-wrapper {
     width: 1720px;
-    margin-right: auto;
-    margin-left: auto;
+  }
+
+  .client {
+    width: 430px;
   }
 
   .client:first-child {
