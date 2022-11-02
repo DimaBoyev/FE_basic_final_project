@@ -1,3 +1,5 @@
+@use "variables";
+
 .section-link {
   font-weight: 700;
   font-size: 14px;
@@ -42,4 +44,10 @@
   -webkit-text-fill-color: transparent;
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+@media (min-width: map-get(variables.$screen-size, "tablet")) {
+  .section-title {
+    margin-bottom: 60px;
+  }
 }

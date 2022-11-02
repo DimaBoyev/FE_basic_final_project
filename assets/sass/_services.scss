@@ -30,6 +30,12 @@
   }
 }
 
+.services-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: map-get(variables.$screen-size, "desktop");
+}
+
 .services-list {
   display: block;
 }
@@ -69,6 +75,11 @@
 }
 
 @media (min-width: map-get(variables.$screen-size, "tablet")) {
+  .services-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .services-list {
     display: flex;
     justify-content: space-between;
@@ -76,7 +87,7 @@
   }
 
   .service {
-    width: 294px;
+    width: calc(50% - 30px);
     margin-bottom: 60px;
   }
 
@@ -91,7 +102,7 @@
 
 @media (min-width: map-get(variables.$screen-size, "netbook")) {
   .service {
-    width: 261px;
+    width: calc(33.33% - 40px);
   }
 
   .service:nth-last-child(-n+3) {
@@ -99,14 +110,11 @@
   }
 }
 
-@media (min-width: map-get(variables.$screen-size, "laptop")) {
-  .service {
-    width: 400px;
-  }
-}
-
 @media (min-width: map-get(variables.$screen-size, "desktop")) {
-  .service {
-    width: 493px;
+  .services-wrapper {
+    padding-left: 160px;
+    padding-right: 160px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

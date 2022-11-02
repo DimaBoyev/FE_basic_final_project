@@ -8,42 +8,14 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
-.wrapper {
-  width: map-get(variables.$wrapper-size, "mobile");
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .main-section {
   padding-bottom: 20px;
   margin-bottom: 30px;
 }
 
 @media (min-width: map-get(variables.$screen-size, "tablet")) {
-  .wrapper {
-    width: map-get(variables.$wrapper-size, "tablet");
-  }
-
   .main-section {
     margin-bottom: 60px;
-  }
-}
-
-@media (min-width: map-get(variables.$screen-size, "netbook")) {
-  .wrapper {
-    width: map-get(variables.$wrapper-size, "netbook");
-  }
-}
-
-@media (min-width: map-get(variables.$screen-size, "laptop")) {
-  .wrapper {
-    width: map-get(variables.$wrapper-size, "laptop");
-  }
-}
-
-@media (min-width: map-get(variables.$screen-size, "desktop")) {
-  .wrapper {
-    width: map-get(variables.$wrapper-size, "desktop");
   }
 }
 
