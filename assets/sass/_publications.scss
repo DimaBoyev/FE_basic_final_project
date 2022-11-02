@@ -22,7 +22,6 @@
 .article-page {
   text-decoration: none;
   display: block;
-  margin-bottom: 30px;
 }
 
 .article-page:last-child {
@@ -33,6 +32,7 @@
   border-radius: 8px;
   overflow: hidden;
   background-color: #FFFFFF;
+  margin-bottom: 30px;
 }
 
 .article:last-child {
@@ -74,4 +74,37 @@
   font-size: 14px;
   line-height: 22px;
   color: #000000;
+}
+
+@media (min-width: map-get(variables.$screen-size, "tablet")) {
+  .articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .article {
+    width: calc(50% - 15px);
+  }
+
+  .article:last-child {
+    width: 100%;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "netbook")) {
+  .articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .article {
+    width: calc(33.33% - 20px);
+    margin-bottom: 0;
+  }
+
+  .article:last-child {
+    width: calc(33.33% - 20px);
+  }
 }
