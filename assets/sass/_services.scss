@@ -30,12 +30,6 @@
   }
 }
 
-.services-wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
-  max-width: map-get(variables.$screen-size, "desktop");
-}
-
 .services-list {
   display: block;
 }

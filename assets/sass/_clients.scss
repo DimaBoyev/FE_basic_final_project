@@ -39,14 +39,8 @@
 }
 
 @media (min-width: map-get(variables.$screen-size, "tablet")) {
-  .client-wrapper {
-    width: 768px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .client {
-    width: 256px;
+    width: 33.33%;
   }
 
   .clients-list {
@@ -60,18 +54,8 @@
 }
 
 @media (min-width: map-get(variables.$screen-size, "netbook")) {
-  .client-wrapper {
-    width: 1024px;
-  }
-}
-
-@media (min-width: map-get(variables.$screen-size, "laptop")) {
-  .client-wrapper {
-    width: 1440px;
-  }
-
   .client {
-    width: 360px;
+    width: 25%;
   }
 }
 
@@ -83,9 +67,7 @@
 
   .client-wrapper {
     width: 1720px;
-  }
-
-  .client {
-    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

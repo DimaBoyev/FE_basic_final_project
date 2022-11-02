@@ -13,9 +13,29 @@ body {
   margin-bottom: 30px;
 }
 
+.wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: map-get(variables.$screen-size, "desktop");
+}
+
 @media (min-width: map-get(variables.$screen-size, "tablet")) {
   .main-section {
     margin-bottom: 60px;
+  }
+
+  .wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "desktop")) {
+  .wrapper {
+    padding-left: 160px;
+    padding-right: 160px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
