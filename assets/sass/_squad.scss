@@ -1,0 +1,92 @@
+@use "variables";
+
+$team-member-picture-width-netbook: 400px;
+
+.squad {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.team-member-card {
+  margin-bottom: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.team-member-photo {
+  height: 500px;
+  background-image: url("../images/squad/oleksandr-oleksandrovskiy.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team-member-details {
+  padding: 30px;
+  background-color: #F5F5FA;
+}
+
+.team-member-details p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #B3B3BA;
+}
+
+.team-member-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+
+.team-member-position {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.squad .section-link {
+  margin-bottom: 5px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+}
+
+.team-member-slide:not(:last-child) {
+  margin-right: 15px;
+}
+
+.team-member-slide {
+  height: 16px;
+  width: 16px;
+  background-color: #24A3FF;
+  opacity: 0.2;
+  border: none;
+  border-radius: 50%;
+}
+
+.team-member-slide.active {
+  opacity: 1;
+}
+
+@media (min-width: map-get(variables.$screen-size, "netbook")) {
+  .squad {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "netbook")) {
+  .team-member-card {
+    display: flex;
+  }
+
+  .team-member-photo {
+    height: auto;
+    width: $team-member-picture-width-netbook;
+  }
+
+  .team-member-details {
+    width: calc(100% - $team-member-picture-width-netbook);
+  }
+}

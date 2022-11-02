@@ -48,6 +48,11 @@
 
 @media (min-width: map-get(variables.$screen-size, "tablet")) {
   .section-title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .services .section-title {
     margin-bottom: 60px;
   }
 }
