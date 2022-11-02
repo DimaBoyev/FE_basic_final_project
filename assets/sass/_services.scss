@@ -5,7 +5,6 @@
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   padding-bottom: 60px;
   position: relative;
-  margin-bottom: 50px;
   border-radius: 0 0 12px 12px;
 
   &::before {
@@ -70,10 +69,6 @@
 }
 
 @media (min-width: map-get(variables.$screen-size, "tablet")) {
-  .services {
-    margin-bottom: 80px;
-  }
-
   .services-list {
     display: flex;
     justify-content: space-between;

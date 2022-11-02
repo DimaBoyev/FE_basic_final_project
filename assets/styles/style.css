@@ -335,9 +335,17 @@ body {
   margin-left: auto;
 }
 
+.main-section {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
 @media (min-width: 768px) {
   .wrapper {
     width: 648px;
+  }
+  .main-section {
+    margin-bottom: 60px;
   }
 }
 @media (min-width: 1024px) {
@@ -403,7 +411,6 @@ body {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   padding-bottom: 60px;
   position: relative;
-  margin-bottom: 50px;
   border-radius: 0 0 12px 12px;
 }
 .services::before {
@@ -466,9 +473,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .services {
-    margin-bottom: 80px;
-  }
   .services-list {
     display: flex;
     justify-content: space-between;

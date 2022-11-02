@@ -14,9 +14,18 @@ body {
   margin-left: auto;
 }
 
+.main-section {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
 @media (min-width: map-get(variables.$screen-size, "tablet")) {
   .wrapper {
     width: map-get(variables.$wrapper-size, "tablet");
+  }
+
+  .main-section {
+    margin-bottom: 60px;
   }
 }
 
