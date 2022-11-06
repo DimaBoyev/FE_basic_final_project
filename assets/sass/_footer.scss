@@ -1,0 +1,157 @@
+@use "variables";
+
+@mixin getContactsDelimiter {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #B3B3BA;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -16px;
+}
+
+.footer {
+  background-color: #F5F5FA;
+}
+
+.contact-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 2px solid #E6E6F0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.geolocation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 21px;
+  gap: 10px;
+}
+
+.street {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+  position: relative;
+}
+
+.location {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+  text-decoration: none;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.social-media {
+  display: block;
+  text-decoration: 0;
+}
+
+.social-media svg {
+  display: block;
+}
+
+.tel {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #46466E;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.mail {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24A3FF;
+  text-decoration: none;
+}
+
+.copyright {
+  display: flex;
+  position: relative;
+
+  & > p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #B3B3BA;
+  }
+}
+
+
+
+@media (min-width: map-get(variables.$screen-size, "tablet")) {
+  .contact-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .address {
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  .geolocation {
+    flex-direction: row;
+    gap: 26px;
+  }
+
+  .street::after {
+    @include getContactsDelimiter();
+  }
+
+  .contacts {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 26px;
+
+    & > a {
+      position: relative;
+    }
+
+    & > a:not(:last-child)::after {
+      @include getContactsDelimiter();
+    }
+  }
+
+  .copyright {
+    width: 50%;
+
+    & > p {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
