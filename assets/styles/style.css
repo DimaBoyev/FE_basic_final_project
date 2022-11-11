@@ -772,6 +772,7 @@ body {
 }
 
 .publication-date {
+  display: block;
   margin-top: 0;
   margin-bottom: 15px;
   font-weight: 700;
@@ -1108,13 +1109,32 @@ body {
     right: 0;
   }
 }
+.layer {
+  background-color: rgba(50, 50, 100, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.layer-show {
+  display: block;
+}
+
 .service-modal {
   padding: 30px;
   background-color: #F5F5FA;
   border-top: 2px solid #E6E6F0;
   display: flex;
   flex-direction: column;
+  width: 100%;
   max-width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .service-modal .section-title {
   margin-bottom: 0;
