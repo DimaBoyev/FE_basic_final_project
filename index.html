@@ -11,7 +11,62 @@
     <main>
       <div class="top-section">
         <div class="group-top-sections">
-          <section class="offers">
+          <section class="hero-section">
+            <header class="header">
+              <div class="header-top head-wrap">
+                <div class="localization">
+                  <a href="/" class="language">ук</a>
+                  <a href="/" class="language">es</a>
+                  <a href="./index.html" class="language language-active">en</a>
+                </div>
+                <div class="contacts-header">
+                  <a href="tel:0800211927" class="tel tel-header">0800 211 927</a>
+                </div>
+              </div>
+              <div class="header-bottom head-wrap">
+                <div class="breadcrumbs">
+                  <div class="logo-link">
+                    <a href="./index.html">
+                      <img src="./assets/images/heroSection/main-logo-mobile.png" class="main-logo" alt="picture of the main logo">
+                    </a>
+                  </div>
+                  <a href="./index.html" class="current-page">
+                    services
+                  </a>
+                </div>
+                <div class="navigation">
+                  <button class="nav-menu-button" id="nav-menu-button">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 10.5H25" stroke="white" stroke-width="2"/>
+                      <path d="M7 16.5H25" stroke="white" stroke-width="2"/>
+                      <path d="M7 22.5H25" stroke="white" stroke-width="2"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </header>
+            <div class="page-title">
+              <h1 class="hero-title">
+                you legal solutions provider
+              </h1>
+            </div>
+            <div class="hero-action">
+              <a href="#offers" class="scroll-button">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_22728_12366)">
+                    <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
+                    <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_22728_12366">
+                      <rect width="42" height="42" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </section>
+          <section class="offers" id="offers">
             <div class="wrapper wrap-offers">
               <div class="offer-card">
                 <div class="offers-list">
@@ -318,7 +373,7 @@
         </div>
       </footer>
     </main>
-    <div class="layer" id="layer">
+    <div class="layer-modal">
       <form action="/" class="service-modal">
         <div class="modal-title">
           <h2 class="section-title">
@@ -347,17 +402,45 @@
         <button class="send-form" type="submit">Send message</button>
       </form>
     </div>
+    <div class="layer-nav-menu">
+      <div class="nav-menu">
+        <button class="close-button close-nav-menu" type="button" id="close-nav-button">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+            <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+          </svg>
+        </button>
+        <a href="/" class="nav-link">about us</a>
+        <a href="/" class="nav-link nav-link-active">services</a>
+        <a href="/" class="nav-link">team</a>
+        <a href="/" class="nav-link">publications</a>
+        <a href="/" class="nav-link">contacts</a>
+      </div>
+    </div>
     <script>
-      const layer = document.querySelector("#layer")
-      const openModalButton = document.querySelector("#modal-open-button")
-      const closeModalButton = document.querySelector("#close-modal-button")
+      const layerModal = document.querySelector(".layer-modal");
+      const openModalButton = document.querySelector("#modal-open-button");
+      const closeModalButton = document.querySelector("#close-modal-button");
       
       openModalButton.addEventListener("click", () => {
-        layer.classList.add("layer-show");
+        layerModal.classList.add("layer-show");
       });
 
       closeModalButton.addEventListener("click", () => {
-        layer.classList.remove("layer-show");
+        layerModal.classList.remove("layer-show");
+      });
+    </script>
+    <script>
+      const layerNavMenu = document.querySelector(".layer-nav-menu");
+      const openNavMenuButton = document.querySelector("#nav-menu-button");
+      const closeNavMenuButton = document.querySelector("#close-nav-button");
+
+      openNavMenuButton.addEventListener("click", () => {
+        layerNavMenu.classList.add("layer-show");
+      });
+
+      closeNavMenuButton.addEventListener("click", () => {
+        layerNavMenu.classList.remove("layer-show");
       });
     </script>
   </body>

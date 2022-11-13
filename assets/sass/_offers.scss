@@ -6,6 +6,7 @@
 }
 
 .offers {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -39,14 +40,14 @@
     -webkit-text-fill-color: transparent;
 
     &:hover {
-      background: #F0145A;;
+      background: variables.$hover-color;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   }
 
   &:hover {
-    color: #F0145A;
+    color: variables.$hover-color;
   }
 }
 

@@ -73,16 +73,10 @@
 
 .social-media svg {
   display: block;
-}
 
-.tel {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: right;
-  color: #46466E;
-  text-decoration: none;
-  white-space: nowrap;
+  &:hover * {
+    fill: variables.$hover-color;
+  }
 }
 
 .mail {
@@ -91,6 +85,10 @@
   line-height: 20px;
   color: #24A3FF;
   text-decoration: none;
+
+  &:hover {
+    color: variables.$hover-color;
+  }
 }
 
 .copyright {

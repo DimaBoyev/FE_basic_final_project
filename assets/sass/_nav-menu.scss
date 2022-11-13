@@ -1,0 +1,57 @@
+@use "variables";
+
+.layer-nav-menu {
+  background-color: rgba(50, 50, 100, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.layer-show {
+  display: block;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 64px 12px 12px;
+  background-color: #FFFFFF;
+  border-radius: 12px 12px 0 0;
+  width: calc(100% - 16px);
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+}
+
+.nav-link {
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #24A3FF;
+  text-decoration: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+  background-color: #F5F5FA;
+  border-radius: 12px;
+
+  &:hover {
+    background-color: #E6E6F0;
+  }
+
+  &-active {
+    color: variables.$hover-color;
+  }
+}
+
+.close-nav-menu {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}

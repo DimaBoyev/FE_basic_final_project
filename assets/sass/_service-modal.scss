@@ -4,7 +4,7 @@
   color: #B3B3BA;
 }
 
-.layer {
+.layer-modal {
   background-color: rgba(50, 50, 100, 0.7);
   position: fixed;
   top: 0;
@@ -53,6 +53,7 @@
   align-items: center;
   padding-left: 0;
   padding-right: 0;
+  cursor: pointer;
 
   &:hover {
     background-color: #E6E6F0;
