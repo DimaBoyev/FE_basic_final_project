@@ -24,3 +24,15 @@ $article-image: (
 );
 
 $hover-color: #F0145A;
+
+@mixin getContactsDelimiter {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #B3B3BA;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -16px;
+}

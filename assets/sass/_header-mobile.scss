@@ -74,4 +74,13 @@
   .header-mobile {
   display: none;
   }
+
+  .logo-link {
+    padding-right: 0;
+    margin-right: 0;
+
+    &:after {
+      display: none;
+    }
+  }
 }

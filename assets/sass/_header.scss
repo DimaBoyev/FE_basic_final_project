@@ -1,0 +1,92 @@
+@use "variables";
+
+.header {
+  display: none;
+  padding-top: 50px;
+}
+
+.header-wrapper {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.address-header {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+.street-header {
+  color: #B3B3BA;
+
+  &::after {
+    display: none;
+  }
+}
+
+.header-address-item {
+  padding-left: 18px;
+  position: relative;
+
+  &::before {
+    @include variables.getContactsDelimiter();
+    left: 6px;
+  }
+}
+
+.navigation {
+  display: flex;
+  gap: 15px
+}
+
+.header-nav-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-bottom: 3px;
+  display: block;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid #FFFFFF;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "tablet")) {
+  .header {
+    display: block;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "netbook")) {
+  .logo-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .header-container {
+    align-items: flex-end;
+    gap: 16px;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "desktop")) {
+  .header-wrapper {
+   padding-left: 160px;
+   padding-right: 160px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: map-get(variables.$screen-size, "desktop");
+  }
+}
