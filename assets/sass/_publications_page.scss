@@ -1,0 +1,70 @@
+@use "variables";
+
+.article-types {
+  display: flex;
+  justify-content: center;
+}
+
+.article-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 30px;
+  background-color: #E6E6F0;
+  border: 2px solid #E6E6F0;
+  border-radius: 12px;
+}
+
+.switcher {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #323264;
+  display: block;
+  padding: 10px 30px;
+
+  &:hover:not(.current-position) {
+    border-radius: 10px;
+    background-color: #F5F5FA;
+  }
+}
+
+.current-position {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.more-publications {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: map-get(variables.$screen-size, "tablet")) {
+  .articles-page {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .more-publications {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .articles-page .article {
+    margin-bottom: 30px;
+  }
+
+  .article {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "netbook")) {
+  .article {
+    width: calc(33.33% - 20px);
+    margin-bottom: 0;
+  }
+}

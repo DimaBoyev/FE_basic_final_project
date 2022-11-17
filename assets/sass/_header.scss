@@ -61,11 +61,11 @@
     border-bottom: 2px solid #FFFFFF;
   }
 
-  &.nav-link-active {
+ .navigation &.nav-link-active {
     color: variables.$hover-color;
   }
 
-  &.nav-link-active:hover {
+  .navigation &.nav-link-active:hover {
     border-bottom: 2px solid variables.$hover-color;
   }
 }

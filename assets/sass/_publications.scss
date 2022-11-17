@@ -37,6 +37,10 @@
   overflow: hidden;
   background-color: #FFFFFF;
   margin-bottom: 30px;
+
+  &:hover .article-title {
+    color: variables.$hover-color;
+  }
 }
 
 .article:last-child {

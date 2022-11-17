@@ -1,0 +1,50 @@
+@use "variables";
+
+.head-light-mode {
+
+  & .header-top {
+    background-color: #F5F5FA;
+  }
+
+  & .language:not(.language-active) {
+    color: #B3B3BA;
+  }
+
+  & .tel-header {
+    color: #B3B3BA;
+  }
+
+  & .header-bottom {
+    padding-bottom: 10px;
+  }
+
+  & .current-page {
+    color: #323264;
+  }
+
+  & .header-address-item::before {
+    background-color: #E6E6F0;
+  }
+
+  & .header-address-item * {
+    fill: #B3B3BA;
+  }
+
+  & .header-nav-link {
+    color: #24A3FF;
+  }
+
+  & .header-nav-link:hover {
+    border-bottom: 2px solid #24A3FF;
+  }
+
+  & .street-header {
+    color: #B3B3BA;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "tablet")) {
+  .head-light-mode {
+    padding-bottom: 60px;
+  }
+}
