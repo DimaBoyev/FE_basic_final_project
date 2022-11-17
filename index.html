@@ -5,7 +5,7 @@
     <meta name="keywords" content="final, project, css, html, sass, hillel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <title>Final project</title>
+    <title>HLegal: main</title>
   </head>
   <body>
     <main>
@@ -87,7 +87,7 @@
                   <div class="nav">
                     <nav class="navigation">
                       <a href="/" class="header-nav-link">about us</a>
-                      <a href="/" class="header-nav-link">services</a>
+                      <a href="./pages/services.html" class="header-nav-link">services</a>
                       <a href="/" class="header-nav-link">team</a>
                       <a href="/" class="header-nav-link">publications</a>
                       <a href="/" class="header-nav-link">contact</a>
@@ -130,7 +130,7 @@
                   <button class="offer">
                     Innovative
                   </button>
-                  <button class="offer" id="modal-open-button">
+                  <button class="offer">
                     Business oriented
                   </button>
                 </div>
@@ -147,7 +147,7 @@
           </section>
           <section class="services">
             <div class="wrapper">
-              <a href="/" class="section-link">
+              <a href="./pages/services.html" class="section-link">
                 services
               </a>
               <h2 class="section-title">
@@ -462,25 +462,12 @@
           </svg>
         </button>
         <a href="/" class="nav-link">about us</a>
-        <a href="/" class="nav-link nav-link-active">services</a>
+        <a href="./pages/services.html" class="nav-link nav-link-active">services</a>
         <a href="/" class="nav-link">team</a>
         <a href="/" class="nav-link">publications</a>
         <a href="/" class="nav-link">contacts</a>
       </div>
     </div>
-    <script>
-      const layerModal = document.querySelector(".layer-modal");
-      const openModalButton = document.querySelector("#modal-open-button");
-      const closeModalButton = document.querySelector("#close-modal-button");
-      
-      openModalButton.addEventListener("click", () => {
-        layerModal.classList.add("layer-show");
-      });
-
-      closeModalButton.addEventListener("click", () => {
-        layerModal.classList.remove("layer-show");
-      });
-    </script>
     <script>
       const layerNavMenu = document.querySelector(".layer-nav-menu");
       const openNavMenuButton = document.querySelector("#nav-menu-button");

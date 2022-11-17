@@ -3,8 +3,7 @@
 $team-member-picture-width-netbook: 400px;
 
 .squad {
-  padding-top: 30px;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .team-member-card {
@@ -69,12 +68,6 @@ $team-member-picture-width-netbook: 400px;
 
 .team-member-slide.active {
   opacity: 1;
-}
-
-@media (min-width: map-get(variables.$screen-size, "netbook")) {
-  .squad {
-    padding-top: 60px;
-  }
 }
 
 @media (min-width: map-get(variables.$screen-size, "netbook")) {

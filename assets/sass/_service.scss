@@ -1,0 +1,126 @@
+@use "variables";
+
+.service-page {
+  text-decoration: none;
+}
+
+.single-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding-bottom: 30px;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+
+  & .service-icon {
+    margin-bottom: 0;
+  }
+
+  & .section-title {
+    margin-bottom: 0;
+  }
+
+  & .single-service-description {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+
+.consultation {
+  display: inline-block;
+  padding: 18px 30px;
+  border: none;
+  background-color: #24A3FF;
+  box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.sub-service-area {
+  padding-top: 30px;
+}
+
+.sub-service-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.sub-services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sub-service {
+  position: relative;
+}
+
+.sub-services-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sub-service-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+  padding-left: 14px;
+
+  &:after {
+    content: "";
+    height: 6px;
+    width: 6px;
+    background-color: variables.$hover-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 13px;
+    left: 0;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "tablet")) {
+  .single-service {
+    padding-bottom: 60px;
+  }
+
+  .sub-services-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sub-services-group {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "laptop")) {
+  .wrap-service {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "desktop")) {
+  .wrap-service {
+    padding-left: 280px;
+    padding-right: 280px;
+  }
+}
