@@ -87,6 +87,10 @@
     align-items: flex-end;
     gap: 16px;
   }
+
+  .street-header {
+    color: #FFFFFF;
+  }
 }
 
 @media (min-width: map-get(variables.$screen-size, "desktop")) {

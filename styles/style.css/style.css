@@ -1537,6 +1537,9 @@ body {
     align-items: flex-end;
     gap: 16px;
   }
+  .street-header {
+    color: #FFFFFF;
+  }
 }
 @media (min-width: 1920px) {
   .header-wrapper {
