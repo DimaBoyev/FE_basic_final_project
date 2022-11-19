@@ -39,6 +39,11 @@ $team-image-height: (
  "desktop": 400px
 );
 
+$team-member-photo-width: (
+"tablet": 300px,
+"desktop": 400px
+);
+
 $hover-color: #F0145A;
 
 @mixin getContactsDelimiter {

@@ -1,0 +1,142 @@
+@use "variables";
+
+
+.member-information {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.introduce {
+  padding-bottom: 30px;
+  border-bottom: 4px solid #E6E6F0;
+}
+
+.photo-teammate {
+  height: map-get(variables.$team-member-photo-width, "tablet");
+  background-image: url(map-get(variables.$team-image, "kobzar"));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.teammate-name {
+  margin-bottom: 15px;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.member-about {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+
+  &-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "tablet")) {
+  .member-information {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+
+  .introduce {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 0;
+  }
+
+  .photo-teammate {
+    width: 300px;
+    margin-bottom: 0;
+  }
+
+  .member-personal {
+    flex-grow: 2;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "netbook")) {
+  .photo-teammate {
+    height: 375px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .member-information {
+    width: calc(100% - map-get(variables.$team-member-photo-width, "tablet") - 60px);
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .team-member-container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "laptop")) {
+  .team-member-wrap {
+    padding-right: 180px;
+    padding-left: 180px;
+  }
+
+  .photo-teammate {
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .member-information {
+    width: calc(100% - map-get(variables.$team-member-photo-width, "desktop") - 60px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .member-info {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 26px;
+  }
+
+  .personal {
+    position: relative;
+   }
+
+  .personal:not(:last-child)::after {
+    @include variables.getContactsDelimiter();
+    background-color: #E6E6F0;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "desktop")) {
+  .team-member-wrap {
+    padding-right: 280px;
+    padding-left: 280px;
+  }
+
+}

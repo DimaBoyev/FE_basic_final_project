@@ -378,6 +378,7 @@ body {
   display: inline-block;
   margin-bottom: 10px;
 }
+
 .section-link::after {
   content: "";
   height: 12px;
@@ -391,9 +392,11 @@ body {
   right: 0;
   margin-top: -6px;
 }
+
 .section-link:hover {
   color: #F0145A;
 }
+
 .section-link:hover::after {
   background-image: url("../images/services/arrow-services-on-hover.png");
 }
@@ -418,6 +421,7 @@ body {
   text-decoration: none;
   white-space: nowrap;
 }
+
 .tel-header {
   color: #FFFFFF;
 }
@@ -436,9 +440,11 @@ body {
   position: relative;
   border-radius: 0 0 12px 12px;
 }
+
 .services-page {
   padding-top: 40px;
 }
+
 .services::before {
   content: " ";
   height: 10px;
@@ -449,6 +455,7 @@ body {
   top: 100%;
   left: 20px;
 }
+
 .services::after {
   content: " ";
   height: 10px;
@@ -781,6 +788,7 @@ body {
   background-color: #FFFFFF;
   margin-bottom: 30px;
 }
+
 .article:hover .article-title {
   color: #F0145A;
 }
@@ -870,6 +878,7 @@ body {
   flex-wrap: nowrap;
   overflow: auto;
 }
+
 .offers-list::-webkit-scrollbar {
   display: none;
 }
@@ -887,16 +896,19 @@ body {
   margin-left: 30px;
   cursor: pointer;
 }
+
 .offer-active {
   background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .offer-active:hover {
   background: #F0145A;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .offer:hover {
   color: #F0145A;
 }
@@ -1060,6 +1072,7 @@ body {
 .social-media svg {
   display: block;
 }
+
 .social-media svg:hover * {
   fill: #F0145A;
 }
@@ -1071,6 +1084,7 @@ body {
   color: #24A3FF;
   text-decoration: none;
 }
+
 .mail:hover {
   color: #F0145A;
 }
@@ -1079,6 +1093,7 @@ body {
   display: flex;
   position: relative;
 }
+
 .copyright > p {
   margin-top: 0;
   margin-bottom: 0;
@@ -1182,6 +1197,7 @@ body {
   transform: translate(-50%, -50%);
   box-shadow: 0 15px 80px rgba(40, 40, 86, 0.5);
 }
+
 .service-modal .section-title {
   margin-bottom: 0;
   width: calc(100% - 42px);
@@ -1205,6 +1221,7 @@ body {
   padding-right: 0;
   cursor: pointer;
 }
+
 .close-button:hover {
   background-color: #E6E6F0;
 }
@@ -1222,11 +1239,13 @@ body {
   border: 1px solid #FFFFFF;
   border-radius: 8px;
 }
+
 .personal-info::placeholder {
   font-size: 16px;
   line-height: 26px;
   color: #B3B3BA;
 }
+
 .personal-info:focus {
   outline: none;
   border: 1px solid #24A3FF;
@@ -1257,6 +1276,7 @@ body {
   border-radius: 12px;
   cursor: pointer;
 }
+
 .send-form:hover {
   background-color: #0085FF;
 }
@@ -1299,6 +1319,7 @@ body {
   text-transform: uppercase;
   padding: 5px 7px;
 }
+
 .language-active {
   background: #F0145A;
   border-radius: 8px;
@@ -1332,9 +1353,11 @@ body {
 .scroll-button {
   text-decoration: none;
 }
+
 .scroll-button svg {
   display: block;
 }
+
 .scroll-button:hover * {
   stroke: #F0145A;
 }
@@ -1394,9 +1417,11 @@ body {
   background-color: #F5F5FA;
   border-radius: 12px;
 }
+
 .nav-link:hover {
   background-color: #E6E6F0;
 }
+
 .nav-link-active {
   color: #F0145A;
 }
@@ -1445,6 +1470,7 @@ body {
   margin-right: 4px;
   position: relative;
 }
+
 .logo-link-mobile:after {
   content: "";
   width: 12px;
@@ -1467,9 +1493,11 @@ body {
   display: flex;
   align-items: center;
 }
+
 .nav-menu-button:hover {
   background: #E6E6F0;
 }
+
 .nav-menu-button:hover * {
   stroke: #323264;
 }
@@ -1509,6 +1537,7 @@ body {
 .street-header {
   color: #B3B3BA;
 }
+
 .street-header::after {
   display: none;
 }
@@ -1517,6 +1546,7 @@ body {
   padding-left: 18px;
   position: relative;
 }
+
 .header-address-item::before {
   content: "";
   width: 6px;
@@ -1546,12 +1576,15 @@ body {
   display: block;
   border-bottom: 2px solid transparent;
 }
+
 .header-nav-link:hover {
   border-bottom: 2px solid #FFFFFF;
 }
+
 .navigation .header-nav-link.nav-link-active {
   color: #F0145A;
 }
+
 .navigation .header-nav-link.nav-link-active:hover {
   border-bottom: 2px solid #F0145A;
 }
@@ -1561,6 +1594,7 @@ body {
   margin-right: 4px;
   position: relative;
 }
+
 .logo-link-desktop:after {
   content: "";
   width: 21px;
@@ -1625,12 +1659,15 @@ body {
   padding-bottom: 30px;
   border-bottom: 4px solid rgba(255, 255, 255, 0.5);
 }
+
 .single-service .service-icon {
   margin-bottom: 0;
 }
+
 .single-service .section-title {
   margin-bottom: 0;
 }
+
 .single-service .single-service-description {
   margin-top: 0;
   margin-bottom: 0;
@@ -1693,6 +1730,7 @@ body {
   color: #FFFFFF;
   padding-left: 14px;
 }
+
 .sub-service-description:after {
   content: "";
   height: 6px;
@@ -1732,30 +1770,39 @@ body {
 .head-light-mode .header-top {
   background-color: #F5F5FA;
 }
+
 .head-light-mode .language:not(.language-active) {
   color: #B3B3BA;
 }
+
 .head-light-mode .tel-header {
   color: #B3B3BA;
 }
+
 .head-light-mode .header-bottom {
   padding-bottom: 10px;
 }
+
 .head-light-mode .current-page {
   color: #323264;
 }
+
 .head-light-mode .header-address-item::before {
   background-color: #E6E6F0;
 }
+
 .head-light-mode .header-address-item * {
   fill: #B3B3BA;
 }
+
 .head-light-mode .header-nav-link {
   color: #24A3FF;
 }
+
 .head-light-mode .header-nav-link:hover {
   border-bottom: 2px solid #24A3FF;
 }
+
 .head-light-mode .street-header {
   color: #B3B3BA;
 }
@@ -1790,6 +1837,7 @@ body {
   display: block;
   padding: 10px 30px;
 }
+
 .switcher:hover:not(.current-position) {
   border-radius: 10px;
   background-color: #F5F5FA;
@@ -1897,9 +1945,11 @@ body {
   color: #000000;
   margin-bottom: 15px;
 }
+
 .paragraph li:last-child {
   margin-bottom: 0;
 }
+
 .paragraph li::marker {
   font-weight: 700;
   font-size: 18px;
@@ -1946,6 +1996,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .follow-us-social:hover {
   background-color: #EDEDF7;
 }
@@ -2154,9 +2205,11 @@ body {
   top: 315px;
   right: 0;
 }
+
 .team-member-page:hover * {
   fill: #EDEDF7;
 }
+
 .team-member-page:hover path {
   stroke: #F0145A;
 }
@@ -2195,5 +2248,138 @@ body {
     padding-left: 120px;
   }
 }
+.member-information {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.introduce {
+  padding-bottom: 30px;
+  border-bottom: 4px solid #E6E6F0;
+}
+
+.photo-teammate {
+  height: 300px;
+  background-image: url("../images/squad/oksana-kobzar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.teammate-name {
+  margin-bottom: 15px;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.member-about {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.member-about-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .member-information {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+  .introduce {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 0;
+  }
+  .photo-teammate {
+    width: 300px;
+    margin-bottom: 0;
+  }
+  .member-personal {
+    flex-grow: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .photo-teammate {
+    height: 375px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .member-information {
+    width: calc(100% - 300px - 60px);
+    display: flex;
+    flex-direction: column;
+  }
+  .team-member-container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+}
+@media (min-width: 1440px) {
+  .team-member-wrap {
+    padding-right: 180px;
+    padding-left: 180px;
+  }
+  .photo-teammate {
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .member-information {
+    width: calc(100% - 400px - 60px);
+    display: flex;
+    flex-direction: column;
+  }
+  .member-info {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 26px;
+  }
+  .personal {
+    position: relative;
+  }
+  .personal:not(:last-child)::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #B3B3BA;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -16px;
+    background-color: #E6E6F0;
+  }
+}
+@media (min-width: 1920px) {
+  .team-member-wrap {
+    padding-right: 280px;
+    padding-left: 280px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

@@ -2087,11 +2087,16 @@ body {
 }
 .squad-section {
   padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 .team-member {
   margin-bottom: 30px;
   position: relative;
+}
+
+.team-member:last-child {
+  margin-bottom: 0;
 }
 
 .team-member-picture {
@@ -2148,6 +2153,178 @@ body {
   position: absolute;
   top: 315px;
   right: 0;
+}
+.team-member-page:hover * {
+  fill: #EDEDF7;
+}
+.team-member-page:hover path {
+  stroke: #F0145A;
+}
+
+@media (min-width: 768px) {
+  .squad-section {
+    padding-top: 0;
+  }
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .team-member-picture {
+    height: 400px;
+  }
+  .team-member {
+    width: calc(50% - 30px);
+  }
+  .team-member:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+  .team-member-page {
+    top: 415px;
+  }
+}
+@media (min-width: 1024px) {
+  .team-member {
+    width: calc(33.33% - 40px);
+  }
+  .team-member:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+  .wrap-team {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+.member-information {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.introduce {
+  padding-bottom: 30px;
+  border-bottom: 4px solid #E6E6F0;
+}
+
+.photo-teammate {
+  height: 300px;
+  background-image: url("../images/squad/oksana-kobzar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.teammate-name {
+  margin-bottom: 15px;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.member-about {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+.member-about-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .member-information {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+  .introduce {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 0;
+  }
+  .photo-teammate {
+    width: 300px;
+    margin-bottom: 0;
+  }
+  .member-personal {
+    flex-grow: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .photo-teammate {
+    height: 375px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .member-information {
+    width: calc(100% - 300px - 60px);
+    display: flex;
+    flex-direction: column;
+  }
+  .team-member-container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+}
+@media (min-width: 1440px) {
+  .team-member-wrap {
+    padding-right: 180px;
+    padding-left: 180px;
+  }
+  .photo-teammate {
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .member-information {
+    width: calc(100% - 400px - 60px);
+    display: flex;
+    flex-direction: column;
+  }
+  .member-info {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 26px;
+  }
+  .personal {
+    position: relative;
+  }
+  .personal:not(:last-child)::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #B3B3BA;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -16px;
+    background-color: #E6E6F0;
+  }
+}
+@media (min-width: 1920px) {
+  .team-member-wrap {
+    padding-right: 280px;
+    padding-left: 280px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
