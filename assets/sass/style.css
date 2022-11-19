@@ -2085,5 +2085,69 @@ body {
     margin-right: auto;
   }
 }
+.squad-section {
+  padding-top: 30px;
+}
+
+.team-member {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.team-member-picture {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.alexandrovskiy {
+  background-image: url("../images/squad/oleksandr-oleksandrovskiy.png");
+}
+
+.patrikov {
+  background-image: url("../images/squad/evgeniy-patrikov.png");
+}
+
+.melnik {
+  background-image: url("../images/squad/vlad-melnik.png");
+}
+
+.binn {
+  background-image: url("../images/squad/sergey-binn.png");
+}
+
+.kobzar {
+  background-image: url("../images/squad/oksana-kobzar.png");
+}
+
+.wolk {
+  background-image: url("../images/squad/julia-wolk.png");
+}
+
+.member-name {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+}
+
+.member-position {
+  font-size: 14px;
+  line-height: 22px;
+  color: #B3B3BA;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.team-member-page {
+  position: absolute;
+  top: 315px;
+  right: 0;
+}
 
 /*# sourceMappingURL=style.css.map */

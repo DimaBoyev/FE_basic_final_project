@@ -25,6 +25,20 @@ $article-image: (
  "reimbursement": "../images/articles/reimbursement.png",
 );
 
+$team-image: (
+ "alexandrovskiy": "../images/squad/oleksandr-oleksandrovskiy.png",
+ "patrikov": "../images/squad/evgeniy-patrikov.png",
+ "melnik": "../images/squad/vlad-melnik.png",
+ "binn": "../images/squad/sergey-binn.png",
+ "kobzar": "../images/squad/oksana-kobzar.png",
+ "wolk": "../images/squad/julia-wolk.png",
+);
+
+$team-image-height: (
+ "mobile": 300px,
+ "desktop": 400px
+);
+
 $hover-color: #F0145A;
 
 @mixin getContactsDelimiter {
