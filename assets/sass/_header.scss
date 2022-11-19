@@ -70,14 +70,48 @@
   }
 }
 
+.logo-link-desktop {
+  padding-right: 25px;
+  margin-right: 4px;
+  position: relative;
+
+  &:after {
+    content:"";
+    width: 21px;
+    height: 47px;
+    background-image: url("../images/heroSection/slash.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
 @media (min-width: map-get(variables.$screen-size, "tablet")) {
   .header {
     display: block;
   }
+
+  .home-page-breadcrumbs {
+    & .current-page {
+      display: none;
+    }
+
+    & .logo-link-desktop {
+      margin-right: 0;
+      padding-right: 0;
+    }
+
+    & .logo-link-desktop:after {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: map-get(variables.$screen-size, "netbook")) {
-  .logo-link {
+  .breadcrumbs {
     position: absolute;
     top: 0;
     left: 0;

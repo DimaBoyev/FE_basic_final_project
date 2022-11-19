@@ -1437,13 +1437,13 @@ body {
   color: #FFFFFF;
 }
 
-.logo-link {
+.logo-link-mobile {
   padding-right: 16px;
   margin-right: 4px;
   position: relative;
 }
 
-.logo-link:after {
+.logo-link-mobile:after {
   content: "";
   width: 12px;
   height: 26px;
@@ -1478,12 +1478,9 @@ body {
   .header-mobile {
     display: none;
   }
-  .logo-link {
-    padding-right: 0;
-    margin-right: 0;
-  }
-  .logo-link:after {
-    display: none;
+  .current-page {
+    font-size: 36px;
+    line-height: 44px;
   }
 }
 .header {
@@ -1564,13 +1561,42 @@ body {
   border-bottom: 2px solid #F0145A;
 }
 
+.logo-link-desktop {
+  padding-right: 25px;
+  margin-right: 4px;
+  position: relative;
+}
+
+.logo-link-desktop:after {
+  content: "";
+  width: 21px;
+  height: 47px;
+  background-image: url("../images/heroSection/slash.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 @media (min-width: 768px) {
   .header {
     display: block;
   }
+  .home-page-breadcrumbs .current-page {
+    display: none;
+  }
+  .home-page-breadcrumbs .logo-link-desktop {
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .home-page-breadcrumbs .logo-link-desktop:after {
+    display: none;
+  }
 }
 @media (min-width: 1024px) {
-  .logo-link {
+  .breadcrumbs {
     position: absolute;
     top: 0;
     left: 0;

@@ -33,7 +33,7 @@
   color: #FFFFFF;
 }
 
-.logo-link {
+.logo-link-mobile {
   padding-right: 16px;
   margin-right: 4px;
   position: relative;
@@ -72,15 +72,11 @@
 
 @media (min-width: map-get(variables.$screen-size, "tablet")) {
   .header-mobile {
-  display: none;
+    display: none;
   }
 
-  .logo-link {
-    padding-right: 0;
-    margin-right: 0;
-
-    &:after {
-      display: none;
-    }
+  .current-page {
+    font-size: 36px;
+    line-height: 44px;
   }
 }
