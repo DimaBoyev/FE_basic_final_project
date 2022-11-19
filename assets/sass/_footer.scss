@@ -96,7 +96,8 @@
 
 
 @media (min-width: map-get(variables.$screen-size, "tablet")) {
-  .contact-info {
+
+  .main-footer .contact-info {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -119,7 +120,7 @@
   .contacts {
     flex-direction: row;
     align-items: center;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     gap: 26px;
 
     & > a {
@@ -131,7 +132,11 @@
     }
   }
 
-  .copyright {
+  .main-footer .contacts {
+    margin-bottom: 0;
+  }
+
+  .main-footer .copyright {
     width: 50%;
 
     & > p {
@@ -139,5 +144,17 @@
       top: 0;
       right: 0;
     }
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "netbook")) {
+  .contact-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contacts {
+    margin-bottom: 0;
   }
 }

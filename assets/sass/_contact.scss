@@ -1,0 +1,120 @@
+@use "variables";
+
+.contact-information {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-detail {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contact-detail:not(:last-child) {
+  border-bottom: 4px solid #E6E6F0;
+}
+
+.contact-street {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-street {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: #323264;
+}
+
+.dial-up-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-tel {
+  font-size: 21px;
+  line-height: 30px;
+  color: #46466E;
+  text-decoration: none;
+}
+
+.contact-mail {
+  font-size: 21px;
+  line-height: 30px;
+  color: #24A3FF;
+  text-decoration: none;
+}
+
+.contact-social {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-social-desc {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+
+.service-modal.contact {
+  position: static;
+  transform: none;
+  box-shadow: none;
+  border-radius: 12px;
+  max-width: 100%;
+}
+
+.contact-form {
+  margin-bottom: 30px;
+}
+
+@media (min-width: map-get(variables.$screen-size, "tablet")) {
+  .contact-form {
+    margin-bottom: 60px;
+  }
+
+  .contact-detail:last-child{
+    padding-bottom: 60px;
+  }
+
+  .contact-detail:first-child {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "netbook")) {
+  .contact-form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-section {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "laptop")) {
+  .wrap-contact {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+
+@media (min-width: map-get(variables.$screen-size, "desktop")) {
+  .wrap-contact {
+    padding-left: 280px;
+    padding-right: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
