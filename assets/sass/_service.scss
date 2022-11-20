@@ -44,6 +44,10 @@
   color: #FFFFFF;
   text-decoration: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: #0085FF;
+  }
 }
 
 .sub-service-area {

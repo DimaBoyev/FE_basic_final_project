@@ -699,11 +699,11 @@ body {
   justify-content: center;
 }
 
-.team-member-slide:not(:last-child) {
+.slide:not(:last-child) {
   margin-right: 15px;
 }
 
-.team-member-slide {
+.slide {
   height: 16px;
   width: 16px;
   background-color: #24A3FF;
@@ -712,8 +712,11 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
+.slide:hover {
+  opacity: 0.6;
+}
 
-.team-member-slide.active {
+.slide.active {
   opacity: 1;
 }
 
@@ -1654,6 +1657,9 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+.consultation:hover {
+  background-color: #0085FF;
+}
 
 .sub-service-area {
   padding-top: 30px;
@@ -2324,6 +2330,232 @@ body {
   .team-member-wrap {
     padding-right: 280px;
     padding-left: 280px;
+  }
+}
+.progress {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.top-progress .section-title {
+  margin-bottom: 28px;
+}
+
+.about-us-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 19px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.about-us-text:last-child {
+  margin-bottom: 0;
+}
+
+.our-progress {
+  margin-bottom: 30px;
+}
+
+.progress-values {
+  padding-left: 30px;
+  border-left: 4px solid #E6E6F0;
+}
+
+.progress-achievement:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.progress-status {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.status-value {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 8px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.progress-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+}
+
+.team {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-image: url("../images/squad/team.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 13px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.8;
+  text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
+}
+
+.bottom-progress {
+  padding-bottom: 60px;
+}
+.bottom-progress .section-title {
+  margin-bottom: 0;
+}
+
+.wrap-achievements {
+  border-bottom: 2px solid #E6E6F0;
+}
+
+.achievements {
+  background-color: #F5F5FA;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.achievements-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+}
+.achievements .slider {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.achievements .slide:not(:last-child) {
+  margin-right: 14px;
+}
+
+.achievement {
+  height: 90px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.achievement:not(:first-child) {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .top-progress {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+  .team-title {
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: 63px;
+  }
+  .team {
+    padding-top: 89px;
+    padding-bottom: 89px;
+  }
+  .bottom-progress {
+    padding-top: 60px;
+  }
+  .achievements-slider {
+    display: flex;
+    justify-content: space-between;
+  }
+  .achievement {
+    width: calc(25% - 30px);
+  }
+  .achievement:nth-child(n+1) {
+    display: flex;
+  }
+  .achievements .slide:nth-child(n+4) {
+    display: none;
+  }
+  .achievements .slide:nth-child(3) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .team {
+    padding-top: 103px;
+    padding-bottom: 103px;
+  }
+  .team-title {
+    font-size: 86px;
+    line-height: 105px;
+    letter-spacing: 63px;
+  }
+  .team {
+    padding-top: 89px;
+    padding-bottom: 89px;
+  }
+  .progress {
+    display: flex;
+    align-items: flex-start;
+  }
+  .top-progress .our-progress {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .bottom-progress .our-progress {
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
+  .bottom-progress .section-title {
+    flex-shrink: 0;
+    width: 362px;
+  }
+  .progress-values {
+    flex-shrink: 0;
+    width: 354px;
+  }
+}
+@media (min-width: 1440px) {
+  .wrap-about {
+    padding-right: 180px;
+    padding-left: 180px;
+  }
+  .team {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+  .team-title {
+    font-size: 96px;
+    line-height: 117px;
+  }
+}
+@media (min-width: 1920px) {
+  .wrap-about {
+    padding-right: 280px;
+    padding-left: 280px;
+  }
+  .team {
+    padding-top: 234px;
+    padding-bottom: 234px;
   }
 }
 

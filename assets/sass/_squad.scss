@@ -52,11 +52,11 @@ $team-member-picture-width-netbook: 400px;
   justify-content: center;
 }
 
-.team-member-slide:not(:last-child) {
+.slide:not(:last-child) {
   margin-right: 15px;
 }
 
-.team-member-slide {
+.slide {
   height: 16px;
   width: 16px;
   background-color: #24A3FF;
@@ -64,9 +64,13 @@ $team-member-picture-width-netbook: 400px;
   border: none;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
-.team-member-slide.active {
+.slide.active {
   opacity: 1;
 }
 
